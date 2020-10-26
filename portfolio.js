@@ -212,7 +212,7 @@ $(document).ready(function() {
     var deviceAgent = navigator.userAgent.toLowerCase();
 
     if (deviceAgent.match(/(iphone|ipod|ipad)/)) {
-    $('.ios').addClass('.ios_after');
+    $('.ios').toggleClass('.ios_after');
     }
 
 });
