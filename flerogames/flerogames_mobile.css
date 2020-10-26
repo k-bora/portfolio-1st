@@ -1,0 +1,496 @@
+/* 모바일  */
+@media screen and (max-width:734px) {
+    *{margin: 0; padding: 0;}
+    .header{
+        position: fixed;
+        width: 100%;
+        height: 51px;
+        z-index: 100;
+        background: #000;
+        border-bottom: 1px solid #343434;
+    }
+    .logo_pc{
+        position: absolute;
+        left: 13px;
+        top: 6px;
+    }
+    .logo_pc img{
+        width: 90px;
+    }
+
+    .top_menu{
+        display: block;
+        position: absolute;
+        top: 50%;
+        right: 120px;
+        transform: translateY(-50%);
+        margin: 0;
+        padding: 0;
+        display: none;
+    }
+    .top_menu li{
+        float: left;
+        margin: 0 0 0 60px;
+        list-style: none;
+        position: relative;
+        cursor: pointer;
+
+    }
+    .sns_bt{
+        position: absolute;
+        top: 17px;
+        right: 50px;
+        width: 20px;
+        height: 20px;
+        overflow: hidden;
+    }
+    .sns_bt img{
+        width: 20px;
+    }
+    /* 호버후의 사진이 밑에 같이 붙어있음. */
+    .sns_bt:hover img{
+        cursor: pointer;
+        position: absolute;
+        top:-50%;
+        transform: translateY(-25%);
+    }
+    .topmenu_1_hide , .topmenu_2_hide , .topmenu_3_hide , .topmenu_4_hide , .topmenu_5_hide{
+        display: none;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .top_menu .topmenu_1:hover .topmenu_1_hide{
+        display: block;
+    }
+    .top_menu .topmenu_2:hover .topmenu_2_hide{
+        display: block;
+    }
+    .top_menu .topmenu_3:hover .topmenu_3_hide{
+        display: block;
+    }
+    .top_menu .topmenu_4:hover .topmenu_4_hide{
+        display: block;
+    }
+    .top_menu .topmenu_5:hover .topmenu_5_hide{
+        display: block;
+    }
+    
+    /* 모바일 메뉴*/
+    .ta_menu_bt{
+        display: block;
+        position: absolute;
+        right: 8px;
+        top: 19px;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+    }
+    .ta_menu_bt img{
+        position: absolute;
+        width: 18px;
+    }
+    .ta_menu_bt_X{
+        display: none;
+    }
+    .ta_mo_menu{
+        width: 100%;
+        margin-top: 51px;
+        position: fixed;
+        display: none;
+    }
+    .ta_mo_menu li{
+        width: 100%;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.75);
+        font-size: 21px;
+        list-style: none;
+        padding: 10px 0 8px 40px;
+        line-height: 30px;
+        cursor: pointer;
+    }
+    .ta_mo_menu li:last-child{
+        padding-bottom: 40px;
+    }
+    .ta_mo_menu li:hover a{
+        text-decoration: underline;
+    }
+    .ta_mo_menu li img{
+        height: 30px;
+        margin-right: 15px;
+        vertical-align:text-top;
+    }
+
+    /* header 끝 */
+    /* content 시작 */
+    .content_title_wrap{
+        padding-top: 51px ;
+        background-color: #f6f6f6;
+    }
+    .content_title{
+        width: 94%;
+        max-width: 1416px;
+        height: 66px;
+        margin: 0 auto;
+        position: relative;
+        border-bottom: 1px solid #e4e4e4;
+        overflow: hidden;
+    }
+    .content_title h2{
+        position: absolute;
+        top: 0;
+        left: 0;
+        line-height: 66px;
+        font-size: 22px;
+        color: #313131;
+        font-family: 'malgun' !important;
+    }
+    .content_title img{
+        width: 192px;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    .content1_wrap{
+        margin-bottom: 50px;
+        padding: 20px 5%;
+        text-align: center;
+        background: url(flerogames_img/recuit.jpg) no-repeat -700px 0;
+        background-attachment: fixed;
+    }
+    .content1_title{
+        display: block;
+        position: relative;
+    }
+    .content1_title_img{
+        vertical-align: top;
+        margin-top: 10px;
+        display: inline-block;
+        width: 31px;
+        height: 14px;
+        background: url(flerogames_img/title_style2.png) no-repeat 0 0;
+    }
+    .img_R{
+        margin-right: 10px;
+    }
+    .img_L{
+        margin-left: 10px;
+    }
+    .content1_title h2{
+        display: inline-block;
+        font-weight: normal;
+        color: #fff;
+        font-size: 25px;
+    }
+
+
+    .content1{
+        padding-top: 10px;
+        padding-bottom: 50px;
+    }
+    .content1::after{
+        margin-bottom: 20px;
+    }
+    .content1_01_passion{
+        display: block;
+        padding: 0 63px;
+        box-sizing: border-box;
+        color: white;
+    }
+    .content1_02_growth{
+        display: block;
+        padding: 0 63px;
+        box-sizing: border-box;
+        color: white;
+    }
+    .content1_03_teamwork{
+        display: block;
+        padding: 0 63px;
+        box-sizing: border-box;
+        color: white;
+    }
+    .content1 img{
+        margin: 0;
+        padding: 0;
+        width: 95%;
+    }
+    .content1 h2{
+        margin-top: -19px;
+        font-size: 22px;
+        font-weight: normal;
+    }
+    .content1 p{
+        margin-top: 20px;
+        font-size: 13px;
+        letter-spacing: -0.25px;
+    }
+
+   /* <!-- content 2 --> */
+    .content2_title{
+        display: block;
+        position: relative;
+        text-align: center;
+    }
+    .content2_title_img{
+        vertical-align: top;
+        margin-top: 10px;
+        display: inline-block;
+        width: 31px;
+        height: 14px;
+        background: url(flerogames_img/title_style2.png) no-repeat 0 -14px;
+    }
+    .img_R2{
+        margin-right: 10px;
+    }
+    .img_L2{
+        margin-left: 10px;
+    }
+    .content2_title h2{
+        display: inline-block;
+        font-weight: normal;
+        color: black;
+        font-size: 25px;
+    }
+
+
+    .content2{
+        width: 94%;
+        margin: 0 auto;
+        font-size: 0;
+
+    }
+    .content2_0{
+        width: calc(100%/2);
+        height: 250px;
+        display: inline-block;
+        text-align: center;
+        vertical-align: top;
+    }
+    .content2_0_img{
+        display: block;
+        margin:  0 auto;
+        width: 85px;
+        width: 85px;
+    }
+    .content2_0_text{
+        margin-top: 5px;
+        padding: 0 10px;
+        display: block;
+    }
+    .content2_0_text h2{
+        font-size: 17px;
+        margin-bottom: 5px;
+    }
+    .content2_0_text p{
+        font-size: 14px;
+        color: #adadad;
+    }
+
+   /* <!-- content 3 --> */
+    .content3_wrap{
+        margin-top: 20px;
+    }
+    .content3_title{
+        display: block;
+        position: relative;
+        text-align: center;
+    }
+    .content3_title_img{
+        vertical-align: top;
+        margin-top: 10px;
+        display: inline-block;
+        width: 31px;
+        height: 14px;
+        background: url(flerogames_img/title_style2.png) no-repeat 0 -14px;
+    }
+    .img_R3{
+        margin-right: 10px;
+    }
+    .img_L3{
+        margin-left: 10px;
+    }
+    .content3_title h2{
+        display: inline-block;
+        font-weight: normal;
+        color: black;
+        font-size: 25px;
+    }
+
+    .content3{
+        width: 94%;
+        margin: 0 auto;
+        position: relative;
+        text-align: center;
+    }
+    .content3_box1{
+        width: 100%;
+        margin: 0 auto;
+        font-size: 0;
+    }
+    .content3_box1 img{
+        display: block;
+        margin: 0 auto;
+        padding-bottom: 20px;
+    }
+    .content3_box1 h2{
+        font-size: 17px;
+        vertical-align: top;
+    }
+    .content3_box1 p{
+        font-size: 14px;
+        margin-top: 10px;
+        color: #adadad;
+        vertical-align: top;
+    }
+    .content3_box1_L{
+        font-size: 0;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    .content3_box1_text{
+        display: block;
+        width: 100%;
+        padding-bottom: 20px;
+        letter-spacing: -1px;
+    }
+    .content3_box1_R{
+        font-size: 0;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+
+    .content3_box2{
+        display: none;
+    }
+   
+    .content3_box3_mo{
+        display: block;
+        margin: 30px 0 35px 0;
+        text-align: center;
+        position: relative;
+    }
+    .content3_box3_0{
+        margin: 0 auto;
+        width: 95%;
+        height: 40px;
+        line-height: 40px;
+        color: white;
+        font-size: 15px;
+        border-radius: 5px;
+        margin-bottom: 20px;
+    }
+    .C3_001{
+        background-color: #4dceb8;
+    }
+    .C3_002{
+        background-color: #4dc2ce;
+    }
+    .C3_003{
+        background-color: #4da3ce;
+    }
+    .C3_004{
+        background-color: #858585;
+    }
+
+    .tri2{
+        width: 0;
+        height: 0;
+        border-top: 10px solid white;
+        border-right: 10px solid transparent;
+        border-left: 10px solid transparent;
+        position: absolute;
+    }
+
+    .tri001{
+        border-top: 10px solid #4dceb8;
+        top: 39px;
+        left: calc(50% - 10px);
+    }
+    .tri002{
+        border-top: 10px solid #4dc2ce;
+        top: 99px;
+        left: calc(50% - 10px);
+    }
+    .tri003{
+        border-top: 10px solid #4da3ce;
+        top: 159px;
+        left: calc(50% - 10px);
+    }
+    
+
+    .content3_box4{
+        display: inline-block;
+        margin: 30px auto 30px auto;
+        padding: 15px 20px 15px 20px;
+        vertical-align: top;
+        font-size: 19px;
+        font-weight: bold;
+        border: solid 1px black;
+        border-radius: 3px;
+        line-height: 20px;
+        cursor: pointer;
+    }
+    .content3_box4 img{
+        margin-right: 5px;
+        vertical-align: middle;
+    }
+    .content3_box4 span{
+        vertical-align: middle;
+
+    }
+
+  /* footer 시작 */
+    footer{
+        width: 100%;
+        background-color: #000;
+        color: #777;
+        font-size: 12px;
+        font-family: "malgun";
+    }
+    .footer_in{
+        max-width: 1500px;
+        margin: 0 auto;
+        position: relative;
+        padding: 12px 8px 5px 12px;
+    }
+    .footer_logo{
+        display: inline-block;
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        display: none;
+    }
+    .footer_info{
+        display: block;
+        top: 30px;
+        left: 10px;
+        line-height: 17px;
+    }
+    .footer_info b{
+        color: #fff;
+        font-size: 15px;
+        font-weight: normal;
+        line-height: 23px;
+    }
+    .footer_link{
+        text-align: center;
+        display: block;
+        font-size: 11px;
+        cursor: pointer;
+        margin: 10px 0;
+    }
+
+
+
+
+
+
+
+
+
+
+
+}
