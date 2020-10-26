@@ -18,7 +18,7 @@ $(document).ready(function() {
         $("nav").fadeOut(500);
         $(".menu_bur3>span").toggleClass('bur_ani');
     });
-    $(".down, #main_logo04").click(function() {
+    $(".down").click(function() {
         position = $("#section02").offset();
         $("body,html").stop().animate({scrollTop:position.top},500);
     });
@@ -40,18 +40,7 @@ $(document).ready(function() {
         $("nav").fadeOut(500);
         $(".menu_bur3>span").toggleClass('bur_ani');
     });
-    $(".menu_bt05").click(function() {
-        position = $("#section05").offset();
-        $("body,html").stop().animate({scrollTop:position.top},500);
-        $("nav").fadeOut(500);
-        $(".menu_bur3>span").toggleClass('bur_ani');
-    });
-    $(".menu_bt06").click(function() {
-        position = $("#section05").offset();
-        $("body,html").stop().animate({scrollTop:position.top},500);
-        $("nav").fadeOut(500);
-        $(".menu_bur3>span").toggleClass('bur_ani');
-    });
+
 
     //클릭시 메뉴창 내려옴, 메뉴바 회전
     $(".menu_bur3").click(function(){
