@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tvn_main.css">
+    <link rel="stylesheet" href="tvn_main_mo.css">
+    <meta name="description" content="kimbora Portfolio">
+    <meta name="author" content="kimbora">
+    <meta property="og:title" content="김보라 | 포트폴리오" />
+    <meta property="og:description" content="html5, css3, javascript, jQuery를 사용하여 제작된 포트폴리오입니다." />
+    <meta property="og:image" content="p_img/main_logo.png" />
+    <!-- Chrome, Safari, IE -->
+    <link rel="shortcut icon" href="p_img/icon.ico">
+    <!-- Firefox, Opera -->
+    <link rel="icon" href="p_img/icon.ico">
+    <script src ="https://code.jquery.com/jquery-3.5.0.min.js" type="text/javascript"></script>
+    <script src="tvn_main.js"></script>
+    <title> Capy Page: 즐거움엔 끝이 없다, tvn </title>
+</head>
+<style>
+    *{margin: 0; padding: 0;
+    user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    }
+</style>
+<body  ondragstart="return false" oncontextmenu="return false">
+<!-- 모바일 -->
+    <div class="mo">
+        <div class="lightbox">
+            <div class="close_bt"><img src="tvn_img/close_icon.png"></div>
+            <div class="mo_bg">
+                Kim bo ra <br> 
+                Portfolio <br>
+                copy page <br><br>
+                안녕하세요.<br>
+                PC화면(1200이상) 맞춤으로 제작된 홈페이지 입니다.<br>
+                감사합니다.
+            </div>
+        </div>
+    </div>
+<!-- pc -->
+<div class="pc">
+    <div class="hover_wrap"></div>
+    <header>
+        <!-- width 1200 -->
+        <div class="header_wrap">
+            <div class="header_login">
+                <div class="header_login_L"><a><img src="tvn_img/tving_logo.png"></a></div>
+                <div class="header_login_R">
+                    <ul>
+                        <li><a>로그인</a></li>
+                        <li><a>티빙 회원가입</a></li>
+                        <li><a>이용권 구매</a></li>
+                        <li><a>프로그램</a></li>
+                    </ul>
+                </div>
+            </div>
+            <h1 class="logo"><a href="http://tvn.tving.com/tvn" target="_blank"><img src="tvn_img/main_logo.png"></a></h1>
+        </div>
+        <div class="header_menu_wrap">
+            <div class="header_menu">
+                <div class="header_menu_L">
+                    <ul class="header_menu_ul">
+                        <li class="none"><a class="_a">About tvN</a></li>
+                        <li class="none"><a class="_a">일일 편성표</a></li>
+                        <li><a class="drama_a">드라마</a>
+                            <ul class="header_in_ul drama_ul">
+                                <li><a>[예정] 청춘기록</a></li>
+                                <li><a>[예정] 비밀의 숲2</a></li>
+                                <li><a>[수/목] 악의 꽃</a></li>
+                                <li><a>[토/일] 사이코지만 괜찮아</a></li>
+                                <li><a>[종영] (아는건 별로 없지만) 가족입니다</a></li>
+                            </ul>
+                        </li>
+                        <li><a class="entertainment_a">연예오락</a>
+                            <ul class="header_in_ul entertainment_ul">
+                                <li><a>[예정] 캐시백</a></li>
+                                <li><a>[예정] 식스센스</a></li>
+                                <li><a>[월] 신박한 정리</a></li>
+                                <li><a>[화] 더짠내투어</a></li>
+                                <li><a>[수] 유 퀴즈 온 더 블럭</a></li>
+                                <li><a>[목] 바퀴 달린 집</a></li>
+                                <li><a>[금] 나홀로 이식당</a></li>
+                                <li><a>[금] 여름방학</a></li>
+                                <li><a>[금] 삼시네세끼</a></li>
+                                <li><a>[토] 온앤오프</a></li>
+                                <li><a>[토] 놀라운 토요일</a></li>
+                                <li><a>[일] 서울촌놈</a></li>
+                                <li><a>[일] 코미디빅리그</a></li>
+                            </ul>
+                        </li>
+                        <li><a class="insight_a">인사이트</a>
+                            <ul class="header_in_ul insight_ul">
+                                <li><a>[월] 신비한 무술사전</a></li>
+                                <li><a>[화] 코리안 몬스터-그를 만든 시간</a></li>
+                                <li><a>[수] 곽승준의 쿨까당</a></li>
+                                <li><a>[종영] 리틀빅 히어로: 더 챌린저</a></li>
+                            </ul>
+                        </li>
+                        <li><a class="sports_a">스포츠</a>
+                            <ul class="header_in_ul sports_ul">
+                                <li><a>[종영] 2019THE CJ CUP@나인 브릿지</a></li>
+                            </ul>
+                        </li>
+                        <li><a class="video_a">동영상</a>
+                            <ul class="header_in_ul video_ul">
+                                <li><a>추천동영상</a></li>
+                                <li><a>동영상 전체보기</a></li>
+                            </ul>
+                        </li>
+                        <li><a class="event_a">이벤트</a>
+                            <ul class="header_in_ul event_ul">
+                                <li><a>진행중이벤트</a></li>
+                                <li><a>당첨자발표</a></li>
+                            </ul>
+                        </li>
+                        <li class="none"><a class="_a">골드핑거 12기</a></li>
+                    </ul>
+                </div>
+                <div class="header_menu_R">
+                    <img src="tvn_img/otvn.png">
+                    <img src="tvn_img/xtvn.png">
+                    <img src="tvn_img/onair.png">
+                </div>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="slide_wrap">
+            <ul class="slide_ul">
+                <li><img src="tvn_img/slied08.jpg"></li>
+                <li><img src="tvn_img/slied01.jpg"></li>
+                <li><img src="tvn_img/slied02.jpg"></li>
+                <li><img src="tvn_img/slied03.jpg"></li>
+                <li><img src="tvn_img/slied04.jpg"></li>
+                <li><img src="tvn_img/slied05.jpg"></li>
+                <li><img src="tvn_img/slied06.jpg"></li>
+                <li><img src="tvn_img/slied07.jpg"></li>
+            </ul>
+            <div class="bt" id="L_bt"><img src="tvn_img/icon_slider_L.png"></div>
+            <div class="bt" id="R_bt"><img src="tvn_img/icon_slider_R.png"></div>
+            <div class="points_box">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="today_wrap">
+            <div class="today_logo">
+                <img src="tvn_img/today_01.jpg">
+            </div>
+            <ul class="today_ul">
+                <li>
+                    <div class="today_time">PM 7:30</div>
+                    <div class="today_title_logo"><img class="today_title_logo_img" src="tvn_img/today_001.png"></div>
+                    <div class="today_title"><img src=""><악의꽃> 3화</div>
+                </li>
+                <li>
+                    <div class="today_time">PM 9:00</div>
+                    <div class="today_title_logo"><img class="today_title_logo_img" src="tvn_img/today_002.png"></div>
+                    <div class="today_title"><img src="tvn_img/icon_today_01.png">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;바퀴 달린 집 3화</div>
+                </li>
+                <li>
+                    <div class="today_time">PM 10:50</div>
+                    <div class="today_title_logo"><img class="today_title_logo_img" src="tvn_img/today_001.png"></div>
+                    <div class="today_title"><img class="img2" src="tvn_img/icon_today_01.png">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<악의꽃> 4화</div>
+                </li>
+                <li>
+                    <div class="today_time">AM 00:20</div>
+                    <div class="today_title_logo"><img class="today_title_logo_img" src="tvn_img/today_002.png"></div>
+                    <div class="today_title"><img src="">바퀴 달린 집 3화</div>
+                </li>
+                <li>
+                    <div class="today_time">AM 2:10</div>
+                    <div class="today_title_logo"><img class="today_title_logo_img" src="tvn_img/today_003.png"></div>
+                    <div class="today_title"><img src="">서울촌놈 1회</div>
+                </li>
+            </ul>
+        </div>
+        <div class="content_wrap">
+            <div class="content_L_wrap">
+                <div class="new_vidio_wrap">
+                    <h3 class="new_vidio_title">최신 동영상<img src="tvn_img/more_01.png"></h3>
+                    <ul class="new_vidio_ul">
+                        <!-- width 205 -->
+                        <li><a>
+                            <h1 class="new_vidio_img"><img src="tvn_img/new_vidio_01.jpg"><div class="time">00:03:15</div></h1>
+                            <h2 class="new_vidio_text">사망한 가족을 앞에 두고...금반지부터 찾았던 유가족</h2>
+                            <h3 class="new_vidio_logo">유 퀴즈 온 더 블럭</h3>
+                        </a></li>
+                        <li><a>
+                            <h1 class="new_vidio_img"><img src="tvn_img/new_vidio_02.jpg"><div class="time">00:00:30</div></h1>
+                            <h2 class="new_vidio_text">[종합예고]검경수사권 조정의 최전선, 안개 속 새로운 비밀의 숲이 열</h2>
+                            <h3 class="new_vidio_logo">비밀의 숲2</h3>
+                        </a></li>
+                        <li><a>
+                            <h1 class="new_vidio_img"><img src="tvn_img/new_vidio_03.jpg"><div class="time">00:02:02</div></h1>
+                            <h2 class="new_vidio_text">[핫이슈 브리핑]코로나19 6개월간의 전쟁!!</h2>
+                            <h3 class="new_vidio_logo">곽승준의 쿨까당</h3>
+                        </a></li>
+                        <li><a>
+                            <h1 class="new_vidio_img"><img src="tvn_img/new_vidio_04.jpg"><div class="time">00:03:15</div></h1>
+                            <h2 class="new_vidio_text">시한부 어머니의 마지막 소원...'시집가는 딸, 눈에 담아 가기'</h2>
+                            <h3 class="new_vidio_logo">유 퀴즈 온 더 블럭</h3>
+                        </a></li>
+                        <li><a>
+                            <h1 class="new_vidio_img"><img src="tvn_img/new_vidio_05.jpg"><div class="time">00:05:42</div></h1>
+                            <h2 class="new_vidio_text">[메이킹 속 메이킹]티벤이 만남 사괜즈(ep1. 서쪽마녀 만나고 왔습니다...</h2>
+                            <h3 class="new_vidio_logo">사이코지만 괜찮아</h3>
+                        </a></li>
+                        <li><a>
+                            <h1 class="new_vidio_img"><img src="tvn_img/new_vidio_06.jpg"><div class="time">00:00:30</div></h1>
+                            <h2 class="new_vidio_text">[예고]끝까지 기억하겠습니다...! 유퀴즈 광복절 특집</h2>
+                            <h3 class="new_vidio_logo">유 퀴즈 온 더 블럭</h3>
+                        </a></li>
+                        <li><a>
+                            <h1 class="new_vidio_img"><img src="tvn_img/new_vidio_07.jpg"><div class="time">00:05:24</div></h1>
+                            <h2 class="new_vidio_text">[즉문즉답Q&A] 그것이 궁금하다 코로나19!</h2>
+                            <h3 class="new_vidio_logo">곽승준의 쿨까당</h3>
+                        </a></li>
+                        <li><a>
+                            <h1 class="new_vidio_img"><img src="tvn_img/new_vidio_08.jpg"><div class="time">00:01:54</div></h1>
+                            <h2 class="new_vidio_text">[코로나19 백신] 부작용은 없을까?</h2>
+                            <h3 class="new_vidio_logo">곽승준의 쿨까당</h3>
+                        </a></li>
+                        <div class="clear"></div>
+                    </ul>
+                  
+                </div>
+                <div class="new_content_wrap">
+                    <h3 class="new_content_title">최신 콘텐츠</h3>
+                    <ul class="new_content_ul">
+                        <li><a>
+                            <img class="new_content_img" src="tvn_img/new_content01.jpg">
+                            <h2 class="new_content_text">CCTV속 나비의 정체는?!</h2>
+                            <p class="new_centent_logo">사이코지만 괜찮아</p>
+                        </a></li>
+                        <li><a>
+                            <img class="new_content_img" src="tvn_img/new_content02.png">
+                            <h2 class="new_content_text">악의 꽃 OST Part1</h2>
+                            <p class="new_centent_logo">악의 꽃</p>
+                        </a></li>
+                        <li><a>
+                            <img class="new_content_img" src="tvn_img/new_content03.jpg">
+                            <h2 class="new_content_text">부부가 쫓는 것은 무엇?</h2>
+                            <p class="new_centent_logo">악의 꽃</p>
+                        </a></li>
+                        <li><a>
+                            <h1 class="new_content_st_title">5화 미리보기</h1>
+                            <p class="new_centent_story">하드코어 로컬 버라이어티 <서울촌놈> '찐 서울 토박이' 차태현X이슬기에게 온 동네 전설들의 위험한 초대! 전라도와 경상도를 가로지른 뒤에는~? 천년의 역사와 전통이</p>
+                            <p class="new_centent_logo">서울촌놈</p>
+                        </a></li>
+                        <li><a>
+                            <img class="new_content_img" src="tvn_img/new_content05.jpg">
+                            <h2 class="new_content_text">조각 강태</h2>
+                            <p class="new_centent_logo">사이코지만 괜찮아</p>
+                        </a></li>
+                        <li><a>
+                            <img class="new_content_img" src="tvn_img/new_content06.jpg">
+                            <h2 class="new_content_text">문영이와 함께하는 가족들</h2>
+                            <p class="new_centent_logo">사이코지만 괜찮아</p>
+                        </a></li>
+                        <li><a>
+                            <img class="new_content_img" src="tvn_img/new_content07.jpg">
+                            <h2 class="new_content_text">MIChickenㅋㅋㅋ치킨을 집...</h2>
+                            <p class="new_centent_logo">서울 촌놈</p>
+                        </a></li>
+                        <li><a>
+                            <h1 class="new_content_st_title">3화 미리보기</h1>
+                            <p class="new_centent_story">뚝뚝 물이 떨어지는 비옷을 입고 집에 들어온 희성을 보며 묘한 위화감을 느끼는 지원.새로 나간 현장에서는 피해자가 비옷을 입은 사내에게 살해당하는 CCTV 영상을 보게</p>
+                            <p class="new_centent_logo">악의 꽃</p>
+                        </a></li>
+                        <div class="clear"></div>
+                    </ul>
+                </div>
+                <div class="benner"><img src="tvn_img/20200616_사이코지만괜찮아_Banner_640x100.jpg"><img src="tvn_img/0000.jpg"></div>
+                <div class="new_program_wrap">
+                    <h3 class="new_program_title">최신 프로그램<img src="tvn_img/more_01.png"></h3>
+                    <ul class="new_program_ul">
+                        <li><a>
+                            <h1 class="new_program_img"><img src="tvn_img/new_program01.jpg"></h1>
+                            <h2 class="new_program_title_logo">식스센스</h2>
+                            <h3 class="new_program_time">9/3 (목) 밤 9시 첫 방송</h3>
+                            <h4 class="new_program_type">연예오락</h4>
+                        </a></li>
+                        <li><a>
+                            <h1 class="new_program_img"><img src="tvn_img/new_program02.jpg"></h1>
+                            <h2 class="new_program_title_logo">신비한 무술사선</h2>
+                            <h3 class="new_program_time">매주 (월) 밤 12시 방송</h3>
+                            <h4 class="new_program_type">인사이트</h4>
+                        </a></li>
+                        <li><a>
+                            <h1 class="new_program_img"><img src="tvn_img/new_program03.jpg"></h1>
+                            <h2 class="new_program_title_logo">나홀로 이식당</h2>
+                            <h3 class="new_program_time">매주 (금) 밤 10시 50분 방송</h3>
+                            <h4 class="new_program_type">연예오락</h4>
+                        </a></li>
+                        <li><a>
+                            <h1 class="new_program_img"><img src="tvn_img/new_program04.jpg"></h1>
+                            <h2 class="new_program_title_logo">여름방학</h2>
+                            <h3 class="new_program_time">매주 (금) 밤 9시 10분 방송</h3>
+                            <h4 class="new_program_type">연예오락</h4>
+                        </a></li>
+                        <li><a>
+                            <h1 class="new_program_img"><img src="tvn_img/new_program05.jpg"></h1>
+                            <h2 class="new_program_title_logo">청춘기록</h2>
+                            <h3 class="new_program_time">9/7 (월) 밤 9시 첫방송</h3>
+                            <h4 class="new_program_type">드라마</h4>
+                        </a></li>
+                    </ul>
+                </div>
+                <div class="best_program_wrap">
+                    <h3 class="best_program_title">최신 프로그램<img src="tvn_img/more_01.png"></h3>
+                    <ul class="best_program_ul">
+                        <li><a>
+                            <h1 class="best_program_img"><img src="tvn_img/best_program01.jpg"></h1>
+                            <h2 class="best_program_title_logo">신박한 정리</h2>
+                            <h3 class="best_program_time">매주 (월) 밤 10시 30분 방송</h3>
+                            <h4 class="best_program_type">연예오락</h4>
+                        </a></li>
+                        <li><a>
+                            <h1 class="best_program_img"><img src="tvn_img/best_program02.jpg"></h1>
+                            <h2 class="best_program_title_logo">사이코지만 괜찮아</h2>
+                            <h3 class="best_program_time">매주 (토,일) 밤 9시 방송</h3>
+                            <h4 class="best_program_type">드라마</h4>
+                        </a></li>
+                        <li><a>
+                            <h1 class="best_program_img"><img src="tvn_img/best_program03.jpg"></h1>
+                            <h2 class="best_program_title_logo">악의 꽃</h2>
+                            <h3 class="best_program_time">매주 (수,목) 밤 10시 50분 ...</h3>
+                            <h4 class="best_program_type">드라마</h4>
+                        </a></li>
+                        <li><a>
+                            <h1 class="best_program_img"><img src="tvn_img/best_program04.jpg"></h1>
+                            <h2 class="best_program_title_logo">바퀴 달린 집</h2>
+                            <h3 class="best_program_time">매주 (목) 밤 9시 방송</h3>
+                            <h4 class="best_program_type">연예오락</h4>
+                        </a></li>
+                        <li><a>
+                            <h1 class="best_program_img"><img src="tvn_img/best_program05.jpg"></h1>
+                            <h2 class="best_program_title_logo">코리안 몬스터-그</h2>
+                            <h3 class="best_program_time">매주 (화) 밤 10시 30분 방송</h3>
+                            <h4 class="best_program_type">인사이트</h4>
+                        </a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="content_R_wrap">
+                <div class="watching_wrap">
+                    <div class="go_bt">
+                        <div class="go_bt_L"><img src="tvn_img/btn_L.png"></div>
+                        <div class="go_bt_R"><img src="tvn_img/btn_R.gif"></div><div class="clear"></div>
+                        <div class="watching_img"><img src="tvn_img/watching_img.jpg"></div>
+                    </div>
+                    <!-- <div class="go_benner"></div> -->
+                </div>
+                <div class="event_go_wrap">
+                    <div class="event_go_title">
+                        <h1>이벤트 참여</h1>
+                        <img class="event_more" src="tvn_img/more_01.png">
+                    </div>
+                    <ul class="event_go_ul">
+                        <li><img src="tvn_img/event01.jpg"></li>
+                        <li class="event_title_li">tvN 유튜브멤버십 론칭 기념 한 달 무료보기 EVE...</li>
+                        <li class="event_day_li">2020.08.01 ~ 2020.08.21</li>
+                    </ul>
+                    <ul class="event_go_ul">
+                        <li><img src="tvn_img/event02.jpg"></li>
+                        <li class="event_title_li">[악의 꽃]tvN 드라마 속 나의 💓커플타입💓은?</li>
+                        <li class="event_day_li">2020.07.27 ~ 2020.08.27</li>
+                    </ul>
+                    <ul class="event_go_ul">
+                        <li><img src="tvn_img/event03.jpg"></li>
+                        <li class="event_title_li">[#즐거움앳홈X바퀴 달린 집] 경상북도와 함께하...</li>
+                        <li class="event_day_li">2020.07.20 ~ 2020.08.20</li>
+                    </ul>
+                </div>
+                <div class="program_go_wrap">
+                    <h1>프로그램 참여</h1>
+                    <ul class="program_go_ul">
+                        <li><img src="tvn_img/list_style.png"><p>랜선 방청 신청</p></li>
+                        <li><img src="tvn_img/list_style.png"><p>[온앤오프] 당신이 꿈꾸는 OFF는?</p></li>
+                        <li><img src="tvn_img/list_style.png"><p>[문제적 남자] 문제 제보</p></li>
+                    </ul>
+                </div>
+                <div class="notice_wrap">
+                    <div class="notic_go_title">
+                        <h1>공지사항</h1>
+                        <img class="notice_more" src="tvn_img/more_01.png">
+                    </div>
+                    <ul class="notic_go_ul">
+                        <li><img src="tvn_img/list_style.png"><p>[채널번호 변경 안내] LG U+ TV 내 tvN...</p></li>
+                        <li><img src="tvn_img/list_style.png"><p>[채널번로 변경 안내] KT olleh TV 내 tv...</p></li>
+                    </ul>
+                </div>
+                <div class="sns_icon_wrap">
+                    <li><a><img src="tvn_img/sns01.png" alt=""></a></li>
+                    <li><a><img src="tvn_img/sns02.png" alt=""></a></li>
+                    <li><a><img src="tvn_img/sns03.png" alt=""></a></li>
+                    <li><a><img src="tvn_img/sns04.png" alt=""></a></li>
+                    <li><a><img src="tvn_img/sns05.png" alt=""></a></li>
+                    <li><a><img src="tvn_img/sns06.png" alt=""></a></li>
+                    <li><a><img src="tvn_img/sns07.png" alt=""></a></li>
+                    <li><a><img src="tvn_img/sns08.png" alt=""></a></li>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer_up_wrap">
+            <div class="footer_up">
+                <div class="f_notic_title">공지사항</div>
+                <div class="f_notic_content">&ensp;[공지사항] [채널번호 변경 안내] LG U+ TV 내 tvN 채널 번호 변경 안내 (17번→3번)</div>
+                <div class="brand_go"><p>브랜드 바로가기</p><img src="tvn_img/footer_bt.png">
+                    <ul class="brand_go_in_ul">
+                        <li><a>MNET</a></li>
+                        <li><a>MWAVE</a></li>
+                        <li><a>tvN</a></li>
+                        <li><a>tvnD</a></li>
+                        <li><a>O tvN</a></li>
+                        <li><a>XtvN</a></li>
+                        <li><a>Onstlye</a></li>
+                        <li><a>O'live</a></li>
+                        <li><a>XTM</a></li>
+                        <li><a>OCN</a></li>
+                        <li><a>tooniverse</a></li>
+                        <li><a>중화TV</a></li>
+                        <li><a>OGN</a></li>
+                        <li><a>CATCH ON</a></li>
+                        <li><a>UXN</a></li>
+                        <li><a>OCNmovies</a></li>
+                        <li><a>겟잇뷰티</a></li>
+                        <li><a>enews24</a></li>
+                        <li><a>OCNthrills</a></li>
+                        <li><a>diatv</a></li>
+                    </ul>
+                </div>
+                <div class="company_go"><p>계열사 바로가기</p><img src="tvn_img/footer_bt.png">
+                    <ul class="company_go_ul">
+                        <h1>CJ그룹</h1>
+                        <li>CJ주식회사</li>
+
+                        <h1>엔터테인먼트 & 미디어</h1>
+                        <li>CJ ENM(E&M)</li>
+                        <li>CJ CGV</li>
+                        <li>CJ파워캐스트</li>
+
+                        <h1>식품 & 식품서비스</h1>
+                        <li>CJ제일제당(식품)</li>
+                        <li>CJ프레시웨이</li>
+                        <li>CJ푸드빌</li>
+                        <li>CJ엠디원</li>
+
+                        <h1>생명공학</h1>
+                        <li>CJ제일제당(바이오)</li>
+
+                        <h1>신유통</h1>
+                        <li>CJ ENM(오쇼핑)</li>
+                        <li>CJ 대한통운</li>
+                        <li>CJ 텔레닉스</li>
+                        <li>CJ 올리브영</li>
+
+                        <h1>인프라</h1>
+                        <li>CJ대한통운(건설)</li>
+                        <li>CJ올리브네트윅스</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer_down_wrap">
+            <ul class="footer_link_ul">
+                <li><a>회사소개</a></li>
+                <li><a>광고/제휴문의</a></li>
+                <li><a>이용약관</a></li>
+                <li><a id="bold">개인정보 처리방침</a></li>
+                <li><a>청소년보호정책</a></li>
+                <li><a>법적고지</a></li>
+                <li><a>이메일무단수집거부</a></li>
+                <li><a>큐톤표</a></li>
+                <li><a>고객센터</a></li>
+            </ul>
+            <p>
+                대표이사: 허민회, 허민호 | 사업자정보확인&ensp; 개인정보관리 책임자:고창남 &ensp;사업자등록번호:106-8151510 &ensp;통신판매신고번호: 서초 제0000015호<br>
+                본점:서울특별시 서초구 과천대로 870-13(방배동)&ensp; 사업장: 서울특별시 마포구 상암산로 66 (상암동)<br>
+                티빙 고객센터 : 1670-1525, tving@cj.net &ensp;ENM 시청자상담실(편성 문의 및 시청자 의견) : 080-080-0780<br>
+                Capyright (C) CJ ENM All Rights Reserved.
+            </p>
+            <img src="tvn_img/footer_logo.png">
+        </div>
+    </footer>
+</div>
+</body>
+<script>
+
+</script>
+</html>
