@@ -115,8 +115,7 @@ dt,dd{display: inline-block}
 }
 
 .ios_after {
-    background-attachment: scroll;
-    background-position: center center;
+    background-attachment: none;
     background-size: cover;
   }
 
