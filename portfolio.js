@@ -208,5 +208,11 @@ $(document).ready(function() {
         });
     });
 
+    // ios 접속시 배경이미지 변경
+    var deviceAgent = navigator.userAgent.toLowerCase();
+
+    if (deviceAgent.match(/(iphone|ipod|ipad)/)) {
+    $('.ios').removeClass('ios_after');
+    }
 
 });

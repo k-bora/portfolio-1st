@@ -417,10 +417,13 @@
     #section04{
         width: 100%;
         background-image: url(p_img/sky4.jpg);
-        background-size: cover;
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-position: center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
     }
     .contact{
         width: 340px;

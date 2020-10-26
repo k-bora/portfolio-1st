@@ -114,6 +114,12 @@ dt,dd{display: inline-block}
     background-size: cover;
 }
 
+.ios_after {
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+  }
+
 @keyframes main_ani{
     0%{ 
         bottom: 0%;
