@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="kimbora Portfolio">
+    <meta name="author" content="kimbora">
+    <meta property="og:title" content="김보라 | 포트폴리오" />
+    <meta property="og:description" content="html5, css3, javascript, jQuery를 사용하여 제작된 포트폴리오입니다." />
+    <meta property="og:image" content="p_img/main_logo.png" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <!-- Chrome, Safari, IE -->
+    <link rel="shortcut icon" href="p_img/icon.ico">
+    <!-- Firefox, Opera -->
+    <link rel="icon" href="p_img/icon.ico">
+    <script src ="https://code.jquery.com/jquery-3.5.0.min.js" type="text/javascript"></script>
+    <title>redesigin | 홈페이지 리디자인</title>
+</head>
+<style>
+*{margin: 0; padding: 0; font-family: 'Noto Sans KR', sans-serif;}
+body{
+    user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    text-align: center;
+    background-color: white;
+    /* background-color: palegoldenrod; */
+    padding: 20px 0;
+    min-width: 320px;
+}
+img{
+    width: 60%;
+    min-width: 375px;
+    /* position: absolute; */
+    margin: 0 auto;
+    max-width: 1200px;
+    display: block;
+}
+#img_02,#img_03,#img_04{
+    display: none;
+}
+nav{
+    width: 100%;
+    min-width: 375px;
+    background-color: white;
+    /* background-color: palegoldenrod; */
+}
+nav>h3{
+    display: inline-block;
+    font-size: 15px;
+    margin: 20px 10px 40px 10px;
+}
+nav>h3:hover{
+    cursor: pointer;
+    color: rgb(0, 110, 255);
+    /* border-bottom: black 2px solid; */
+}
+a{
+    color: #000;
+    text-decoration: none;
+}
+a:hover{
+    color: rgb(0, 110, 255);
+}
+</style>
+<body  ondragstart="return false" oncontextmenu="return false">
+    <nav>
+        <h3 id="bt01">HOME</h3>
+        <h3 id="bt02">메인화면</h3>
+        <h3 id="bt03">교육과정소개</h3>
+        <h3 id="bt04">주요교과목</h3>
+    </nav>
+    <section>
+        <div id="img_01">
+            <img src="redesigin_img/main.jpg">
+        </div>
+        <div id="img_02">
+            <img src="redesigin_img/메인-1.gif">
+            <a href="https://itec.doowon.ac.kr/" target="_blank"><h5>오리지널 홈페이지 보러가기</h5></a>
+        </div>
+        <div id="img_03">
+            <img src="redesigin_img/소개-1.gif">
+            <a href="https://itec.doowon.ac.kr/entrance/eduApply/eduInfo.do" target="_blank"><h5>오리지널 홈페이지 보러가기</h5></a>
+        </div>
+        <div id="img_04">
+            <img src="redesigin_img/과목-1.gif">
+            <a href="https://itec.doowon.ac.kr/edu/edumain/eduInfo.do" target="_blank"><h5>오리지널 홈페이지 보러가기</h5></a>
+        </div>
+
+    </section>
+</body>
+<script>
+$(document).ready(function(){
+    
+    $("#bt01").click(function(){
+        $("#img_02, #img_03, #img_04").fadeOut(0);
+        $("#img_01").fadeIn(500);
+    });
+
+    $("#bt02").click(function(){
+        $("#img_01, #img_03, #img_04").fadeOut(0);
+        $("#img_02").fadeIn(500);
+    });
+
+    $("#bt03").click(function(){
+        $("#img_01, #img_02, #img_04").fadeOut(0);
+        $("#img_03").fadeIn(500);
+    });
+
+    $("#bt04").click(function(){
+        $("#img_01, #img_02, #img_03").fadeOut(0);
+        $("#img_04").fadeIn(500);
+    });
+
+
+});
+</script>
+</html>
