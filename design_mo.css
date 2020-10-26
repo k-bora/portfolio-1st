@@ -1,0 +1,116 @@
+/* 모바일 */
+@media screen and (max-width:768px) {
+
+    .more_in{
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        display: block;
+    }
+    .more_in_title{
+        width: 340px;
+        height: 100%;
+        margin: 0 auto;
+        position: relative;
+    }
+    .more_in img{
+        width: 340px;
+    }
+    .ui_ux{
+        width: 100%;
+        background-color:#f7f6e5;
+        padding-bottom: 50px;
+    }
+    .ui_ux_fixde_w{
+        width: 340px;
+        margin:0 auto;
+        position: relative;
+    }
+    .ui_ux_text{
+        display: none;
+    }
+    .ui_ux_bt{
+        position: absolute;
+        bottom:60px;
+        left: 43px;
+        border:solid 0.5px gray;
+        border-radius: 2px;
+        padding:2px;
+        font-size: 10px;
+    }
+    .ui_ux_bt>a{
+        color: #000;
+        text-decoration: none;
+    }
+    .ui_ux_bt:hover{
+        background-color:rgba(0, 0, 0, 0.5);
+        cursor: pointer;
+    }
+    .ui_ux_bt:hover a{
+        color: #fff;
+    }
+    .ui_ux>img{
+        margin-top: 100px;
+    }
+    .re_de{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        padding-top: 50px;
+        padding-bottom: 350px;
+    }
+    .re_de_bg{
+        position: absolute;
+        bottom: 0;
+        z-index: -1;
+        width: 100%;
+        height: 426px;
+        background-color:#dcd9d4;
+    }
+    .re_de_fixde_w{
+        width: 340px;
+        margin:0 auto;
+        position: relative;
+    }
+    .re_de_text{
+        display: none;
+    }
+    .re_de_bt{
+        position: absolute;
+        left: 50%;
+        bottom: 20px;
+        transform: translateX(-50%);
+        border:solid 0.5px gray;
+        border-radius: 2px;
+        padding:2px;
+        font-size: 10px;
+    }
+    .re_de_bt>a{
+        color: #000;
+        text-decoration: none;
+    }
+    .re_de_bt:hover{
+        background-color:rgba(0, 0, 0, 0.5);
+        cursor: pointer;
+    }
+    .re_de_bt:hover a{
+        color: #fff;
+    }
+    .next_title {
+        position: absolute;
+        bottom: -10px;
+        width: 100%;
+        height: 250px;
+        margin-bottom: 10px;
+        background-image: url(p_img/port_img4.png) ;
+        background-size: cover;
+        background-attachment: fixed;
+      }
+    .next_title>h1{
+        width: 100%;
+        color: rgb(36, 36, 36);
+        line-height: 10px;
+        font-size: 20px;
+    }
+
+}

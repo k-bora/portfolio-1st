@@ -1,0 +1,132 @@
+*{margin: 0; padding: 0; font-family: 'Noto Sans KR', sans-serif;}
+body{overflow-x: hidden;}
+body, img{  
+    user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+}
+#section02{
+    user-select: text;
+    -ms-user-select: text;
+    -webkit-user-select: text;
+    -moz-user-select: text;
+    -o-user-select: text;
+  }
+#loading {
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  position: fixed;
+  display: block;
+  background-color: #fff;
+  z-index: 99999;
+  text-align: center;
+}
+
+#loading-image{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 100000;
+}
+a{text-decoration: none;}
+dt,dd{display: inline-block}
+#de_main_link{
+    padding: 0 5px;
+    border-radius: 5px;
+    text-align: left;
+    letter-spacing: -0.5px;
+    color: #404041;
+    text-decoration: none;
+    transition: all 0.3s;
+    animation-name:desgin_go_ani;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction:alternate;
+}
+#de_main:hover{
+    color: rgb(46, 166, 214);
+    transition: all 0.3s;
+}
+#design_link{
+    font-size: 9px;
+    opacity: 0.5;
+}
+
+-moz-::selection{
+    background:yellowgreen;
+    color: #fff;
+}
+::selection{
+    background:yellowgreen;
+    color: #fff;
+}
+/* 메인 스크롤 다운 애니메이션 */
+.down{
+    position: absolute;
+    font-size: 10px;
+    line-height: 12px;
+    font-weight: 500;
+    bottom: 3%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.down_move{
+    position: absolute;
+    animation-name:main_ani;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction:alternate;
+}
+/* 스킵메뉴 */
+#skip a{
+    position: absolute;
+    left: 0;
+    top: -35px;
+    border: 1px #fff solid;
+    color: #fff;
+    line-height: 30px;
+    width: 200px;
+    text-align: center;
+    text-decoration: none;
+    z-index: 2;
+}
+#skip a:hover{
+    color: #390;
+}
+#skip a:active, #skip a:focus{
+    top: 0;
+}
+/* section 설정 */
+#section01 , #section02, #section03{
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+}
+#section01{
+    height: 100vh;
+    background-image: url(p_img/sky.jpg);
+    background-size: cover;
+}
+
+@keyframes main_ani{
+    0%{ 
+        bottom: 0%;
+    }
+    100%{
+        bottom: 1%;
+    }
+}
+@keyframes desgin_go_ani{
+    0%{ 
+        color: #404041;
+    }
+    100%{
+        color: rgb(46, 166, 214);
+    }
+}

@@ -1,0 +1,127 @@
+/*  PC */
+@media screen and (min-width:1201px) {
+    
+
+    .more_in{
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        display: block;
+    }
+    .more_in_title{
+        width: 1200px;
+        height: 100%;
+        margin: 0 auto;
+        position: relative;
+    }
+    .more_in img{
+        width: 1000px;
+    }
+    .ui_ux{
+        width: 100%;
+        background-color:#f7f6e5;
+        padding-bottom: 100px;
+    }
+    .ui_ux>img{
+        margin-top: 150px;
+    }
+    .ui_ux_fixde_w{
+        width: 1200px;
+        margin:0 auto;
+        position: relative;
+    }
+    .ui_ux_text{
+        position: absolute;
+        bottom:205px;
+        left: 230px;
+        text-align: left;
+        font-size: 15px;
+        line-height: 18px;
+        letter-spacing: -0.25px;
+        color:#000;
+    }
+    .ui_ux_bt{
+        position: absolute;
+        bottom:120px;
+        left: 230px;
+        border:solid 1px #000;
+        border-radius: 2px;
+        padding:5px;
+    }
+    .ui_ux_bt>a{
+        color: #000;
+        text-decoration: none;
+    }
+    .ui_ux_bt:hover{
+        background-color:rgba(0, 0, 0, 0.5);
+        cursor: pointer;
+    }
+    .ui_ux_bt:hover a{
+        color: #fff;
+    }
+
+    .re_de{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        padding-top: 80px;
+        padding-bottom: 405px;
+    }
+    .re_de_bg{
+        position: absolute;
+        bottom: 0;
+        z-index: -1;
+        width: 100%;
+        height: 619px;
+        background-color:#dcd9d4;
+    }
+    .re_de_fixde_w{
+        width: 1200px;
+        margin:0 auto;
+        position: relative;
+    }
+    .re_de_text{
+        position: absolute;
+        bottom:75px;
+        left: 250px;
+        font-size: 17px;
+        line-height: 20px;
+        letter-spacing: -0.25px;
+        color:#000;
+    }
+    .re_de_bt{
+        position: absolute;
+        bottom:0;
+        left: 50%;
+        transform: translateX(-50%);
+        border:solid 1px #000;
+        border-radius: 2px;
+        padding:5px;
+    }
+    .re_de_bt>a{
+        color: #000;
+        text-decoration: none;
+    }
+    .re_de_bt:hover{
+        background-color:rgba(0, 0, 0, 0.5);
+        cursor: pointer;
+    }
+    .re_de_bt:hover a{
+        color: #fff;
+    }
+    .next_title {
+        position: absolute;
+        bottom: -10px;
+        width: 100%;
+        height: 250px;
+        margin-bottom: 10px;
+        background-image: url(p_img/port_img4.png) ;
+        background-size: cover;
+        background-attachment: fixed;
+      }
+    .next_title>h1{
+        color: rgb(36, 36, 36);
+        line-height: 10px;
+    }
+
+}

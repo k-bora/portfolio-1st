@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="kimbora Portfolio">
+    <meta name="author" content="kimbora">
+    <meta property="og:title" content="김보라 | 포트폴리오" />
+    <meta property="og:description" content="html5, css3, javascript, jQuery를 사용하여 제작된 포트폴리오입니다." />
+    <meta property="og:image" content="p_img/url_img01.png" />
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="p_img/icon.ico">
+    <link rel="icon" href="p_img/icon.ico">
+    <title>인포그래픽 | 포트폴리오</title>
+</head>
+<style>
+    *{margin: 0; padding: 0;}
+    body{
+        background-color: #e3fcf5;
+        overflow-x: hidden;
+    }
+    #text{
+        width: 90%;
+        margin: 0 auto;
+        position: relative;
+        text-align: center;
+    }
+    .title{
+        position: relative;
+        font-size: 101.5px;
+        right: -10%;
+        top: 100px;
+        color: gray;
+        transition: all 2s;
+    }
+    .story{
+        position: relative;
+        font-size: 13px;
+        letter-spacing: -0.1px;
+        top: 100px;
+        right: -10%;
+        color: gray;
+        transition: all 2s;
+    }
+    #info_img{
+        width: 50%;
+        display: block;
+        margin: 250px auto 100px auto;
+    }
+    nav{
+        text-align: center;
+        display: block;
+        font-size: 12px;
+        margin: 30px auto;
+    }
+    li{
+        display: inline-block;
+        list-style: none;
+    }
+    a{
+        color: black;
+    }
+    span{
+        opacity: 0.5;
+    }
+    /* 태블렛 */
+@media screen and (min-width:769px) and (max-width:1200px) {
+    .title{
+        font-size: 51.5px;
+    }
+    .story{
+        top: 130px;
+        font-size: 12px;
+        letter-spacing: -0.25px;
+    }
+}
+    /* 모바일 */
+@media screen and (max-width:768px) {
+    .title{
+        font-size: 51.5px;
+    }
+    .story{
+        top: 130px;
+        font-size: 10px;
+        letter-spacing: -0.25px;
+    }
+    #info_img{
+        width: 80%;
+        display: block;
+        margin: 250px auto 100px auto;
+        
+    }
+}
+</style>
+<body ondragstart="return false" oncontextmenu="return false">
+    <!-- 인포그래픽 글씨 -->
+    <section id="text">
+        <h1 class="title">인포그래픽</h1>
+        <p class="story">지루함과 밋밋함을 없애기 위해 메인글씨와 치약그림, 배경에 입체감을 주었습니다.
+            <br> 양치할 때의 주의할 점은 내용이 한눈에 들어올 수 있게 간단한 그림으로 넣고 아래로 세부설명을 넣었습니다.
+        </p>
+    </section>
+
+    <section>
+        <img id="info_img" src="p_img/인포-목업2.png">
+    </section>
+    <nav>
+        <a href="deteil.html"><li><b>〈</b></span> 상세페이지 <span>|</span></li></a>
+        <a href="de-main.html"><li> 메인화면 <span>|</span></li></a>
+        <a href="cardnews2.html"><li> 카드뉴스 <b>〉</b></li></a>
+    </nav>
+</body>
+<script>
+
+    // 글씨 움직임
+    $('.title, .story').animate({
+        "right":"0%"
+        // ,
+        // "transition": "all 2s"
+    });
+
+</script>
+</html>

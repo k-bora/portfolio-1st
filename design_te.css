@@ -1,0 +1,129 @@
+/* 테블릿 */
+@media screen and (min-width:769px) and (max-width:1200px) {
+
+    .more_in{
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        display: block;
+    }
+    .more_in_title{
+        width: 760px;
+        height: 100%;
+        margin: 0 auto;
+        position: relative;
+    }
+    .more_in img{
+        width: 760px;
+    }
+    .ui_ux{
+        width: 100%;
+        background-color:#f7f6e5;
+        padding-bottom: 50px;
+    }
+    .ui_ux_fixde_w{
+        width: 760px;
+        margin:0 auto;
+        position: relative;
+    }
+    .ui_ux_text{
+        position: absolute;
+        bottom:150px;
+        left: 100px;
+        text-align: left;
+        font-size: 13px;
+        line-height: 15px;
+        letter-spacing: -0.25px;
+        color:#000;
+    }
+    .ui_ux_bt{
+        position: absolute;
+        bottom:70px;
+        left: 100px;
+        border:solid 1px #000;
+        border-radius: 2px;
+        padding:7px;
+        font-size: 13px;
+        line-height: 13px;
+    }
+    .ui_ux_bt>a{
+        color: #000;
+        text-decoration: none;
+    }
+    .ui_ux_bt:hover{
+        background-color:rgba(0, 0, 0, 0.5);
+        cursor: pointer;
+    }
+    .ui_ux_bt:hover a{
+        color: #fff;
+    }
+    .ui_ux>img{
+        margin-top: 150px;
+    }
+    .re_de{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        padding-top: 70px;
+        padding-bottom: 500px;
+    }
+    .re_de_bg{
+        position: absolute;
+        bottom: 0;
+        z-index: -1;
+        width: 100%;
+        height: 664px;
+        background-color:#dcd9d4;
+    }
+    .re_de_fixde_w{
+        width: 760px;
+        margin:0 auto;
+        position: relative;
+    }
+    .re_de_text{
+        position: absolute;
+        bottom:50px;
+        left: 80px;
+        font-size: 13px;
+        line-height: 18px;
+        letter-spacing: -0.25px;
+        color:#000;
+    }
+    .re_de_bt{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        border:solid 1px #000;
+        border-radius: 2px;
+        padding:7px;
+        font-size: 13px;
+        line-height: 13px;
+    }
+    .re_de_bt>a{
+        color: #000;
+        text-decoration: none;
+    }
+    .re_de_bt:hover{
+        background-color:rgba(0, 0, 0, 0.5);
+        cursor: pointer;
+    }
+    .re_de_bt:hover a{
+        color: #fff;
+    }
+    .next_title {
+        position: absolute;
+        bottom: -10px;
+        width: 100%;
+        height: 250px;
+        margin-bottom: 10px;
+        background-image: url(p_img/port_img4.png) ;
+        background-size: cover;
+        background-attachment: fixed;
+      }
+    .next_title>h1{
+        width: 100%;
+        color: rgb(36, 36, 36);
+        line-height: 10px;
+    }
+    
+}

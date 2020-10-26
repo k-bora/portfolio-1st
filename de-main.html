@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="kimbora Portfolio">
+    <meta name="author" content="kimbora">
+    <meta property="og:title" content="김보라 | 포트폴리오" />
+    <meta property="og:description" content="html5, css3, javascript, jQuery를 사용하여 제작된 포트폴리오입니다." />
+    <meta property="og:image" content="p_img/url_img01.png" />
+    <link rel="shortcut icon" href="p_img/icon.ico">
+    <link rel="icon" href="p_img/icon.ico">
+    <link rel="stylesheet" href="design_pc.css">
+    <link rel="stylesheet" href="design_te.css">
+    <link rel="stylesheet" href="design_mo.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <title>디자인 ㅣ 포트폴리오</title>
+</head>
+<style>
+    *{margin: 0; padding: 0;  font-family: 'Noto Sans KR', sans-serif;}
+    .width3{
+        width: calc(100%/3.0001);
+        height: 100vh;
+        float: left;
+        position: relative;
+        background-color: rgb(34, 34, 34);
+        overflow: hidden;
+        cursor: pointer;
+        text-align: center;
+    }
+
+    #deteil_img{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        opacity: 0.15;
+        width: 140%;
+        transition: all 0.5s;
+    }
+    .deteil:hover>a>#deteil_img , .deteil:focus>a>#deteil_img{
+        opacity: 0.5;
+        width: 145%;
+        transition: all 0.5s;
+    }
+    .width3:hover>h1 , .width3:focus>h1{
+        opacity: 0;
+        z-index: -1;
+    }
+    #info_img{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        opacity: 0.15;
+        width: 135%;
+        transition: all 0.5s;
+    }
+    .info:hover>a>#info_img, .info:focus>a>#info_img{
+        opacity: 0.5;
+        width: 140%;
+        transition: all 0.5s;
+    }
+    #card_img{
+        position: absolute;
+        top:-120px;
+        left: 50%;
+        transform: translateX(-50%);
+        opacity: 0.15;
+        width: 90%;
+        transition: all 0.5s;
+    }
+    .card:hover>a>#card_img, .card:focus>a>#card_img{
+        opacity: 0.5;
+        width: 95%;
+        transition: all 0.5s;
+    }
+
+    h1{
+        color: white;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 99;
+    }
+    span{
+        font-size: 13px;
+        font-weight: 400;
+    }
+    /* 태블렛 모바일 */
+@media screen and (max-width:1200px) {
+    .width3{
+        width: 100%;
+    }
+}
+</style>
+<body ondragstart="return false" oncontextmenu="return false">
+    <section>
+        <div id="section_in">
+            <div class="more_in" ondragstart="return false" oncontextmenu="return false">
+                <div class="more_in_title">
+                    <!-- <h1 class="title T05">MORE</h1> -->
+                </div>
+                <div class="ui_ux">
+                    <img src="p_img/more_3.jpg">
+                    <div class="ui_ux_fixde_w">
+                        <p class="ui_ux_text">
+                            맘스터치의 매장수가 매년 증가하고 있으며 국내<br>
+                            햄버거 대표브랜드로 인지도를 높이고 있습니다.<br><br>
+                            하지만 맘스터치는 아직 PC홈페이지만 제공하고 있어<br>
+                            모바일 홈페이지를 기획해 보았습니다.
+                        </p>
+                        <div class="ui_ux_bt"><a href="https://c11.kr/m-moms" target="_blank">자세히 보기</a></div>
+                    </div>
+                </div>
+                <div class="re_de">
+                    <img src="p_img/more2_3.jpg">   
+                    <div class="re_de_fixde_w">
+                        <p class="re_de_text">
+                            대학교의 학과별 홈페이지처럼 경기산업기술교육센터의 웹퍼블리싱과정 홈페이지를 따로 제작했습니다.<br>
+                            (메인 화면, 교육 과정 소개,주요 교과목)
+                        </p>
+                        <div class="re_de_bt"><a href="https://c11.kr/re-hom" target="_blank">자세히 보기</a></div>
+                    </div>
+                    <div class="re_de_bg"></div>
+                    <div class="next_title">
+                        <h1>Detail page & Infographics & Card News</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="width3 deteil" tabindex="0">
+            <a href="deteil.html">
+                <img id="deteil_img" src="p_img/위글위글파우치-상세페이지제작.jpg">
+            </a>
+            <h1>상세페이지<br><span>위글위글 파우치 상품설명</span></h1>
+        </div>
+        <div class="width3 info" tabindex="0">
+            <a href="info.html">
+                <img id="info_img" src="p_img/인포그래픽_치약성분.jpg">
+            </a>
+            <h1>인포그래픽<br><span>치약성분 및 양치할때의 주의할점</span></h1>
+        </div>
+        <div class="width3 card" tabindex="0">
+            <a href="cardnews2.html">
+                <img id="card_img" src="p_img/목업2.png">
+            </a>
+            <h1>카드뉴스<br><span>2020년 치과건강보험</span></h1>
+        </div>
+    </section>
+</body>
+</html>

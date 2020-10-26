@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="kimbora Portfolio">
+  <meta name="author" content="kimbora">
+  <meta property="og:title" content="김보라 | 포트폴리오" />
+  <meta property="og:description" content="html5, css3, javascript, jQuery를 사용하여 제작된 포트폴리오입니다." />
+  <meta property="og:image" content="p_img/url_img01.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./slick/slick.css">
+  <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css">
+  <link rel="shortcut icon" href="p_img/icon.ico">
+  <link rel="icon" href="p_img/icon.ico">
+  <title>카드뉴스 | 포트폴리오</title>
+</head>
+<style type="text/css">
+  html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #e4f5fc;
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  * {
+    box-sizing: border-box;
+    font-family: 'Noto Sans KR', sans-serif;
+  }
+
+  #over_hidden{
+    width:300px;
+    height: 355px;
+    position: absolute;
+    top: 175px;
+    left: 56px;
+    overflow: hidden;
+    cursor: move;
+  }
+  .w_size{
+    width: 396px;
+    height: 747.23px;
+    position: absolute;
+    /* top: 50%; */
+    left: 50%;
+    /* transform: translate(-50%,-50%); */
+    transform: translateX(-50%);
+  }
+
+  .slider {
+    width:300px;
+    position: absolute;
+    top: 7px;
+    left: 0;
+
+  }
+
+  .slick-slide {
+    margin: 0px 0px;
+    width: 300px;
+  }
+
+  .slick-slide img {
+    width: 300px;
+  }
+
+  .slick-prev:before,
+  .slick-next:before {
+    color: black;
+  }
+
+
+  .slick-slide {
+    transition: all ease-in-out .3s;
+    opacity: 0;
+  }
+  
+  .slick-active {
+    opacity: 1;
+  }
+
+  .slick-current {
+    opacity: 1;
+    width: 300px;
+  }
+
+  #bg{
+    position: absolute;
+    /* top: 50%; */
+    left: 50%;
+    /* transform: translate(-50%,-50%); */
+    transform: translateX(-50%);
+  }
+  #bg>img{
+    width: 396px;
+  }
+  #card_all{
+    width: 100%;
+    margin-top: 900px;
+  }
+  #card_all>img{
+    width: 100%;
+  }
+
+  h1{
+    font-size: 150px;
+    color: gray;
+    transition: all 1s;
+  }
+
+  .title_L{
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .title_R{
+    position: absolute;
+    top: 200px;
+    right: 0;
+  }
+  .story{
+    width: 90%;
+    position: absolute;
+    top: 790px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 12px;
+    text-align: center;
+  }
+  nav{
+    font-size: 12px;
+    position: relative;
+    bottom: 10px;
+    text-align: center;
+    background-color: #006792;
+    padding: 50px 0;
+  }
+  li{
+    display: inline-block;
+    list-style: none;
+  }
+  a{
+    color: white;
+    font-weight: 100;
+  }
+  span{
+    opacity: 0.5;
+  }
+  /* 태블렛 */
+  @media screen and (min-width:769px) and (max-width:1200px) {
+    h1{
+        font-size: 50px;
+    }
+    .story{
+      top: 800px;
+      font-size: 11px;
+      letter-spacing: -0.25px;
+    }
+  }
+  /* 모바일 */
+  @media screen and (max-width:768px) {
+    h1{
+      font-size: 50px;
+    }
+    .title_L{
+      position: absolute;
+      top: 710px;
+      left: 0;
+    }
+    .title_R{
+      position: absolute;
+      top: 730px;
+      right: 0;
+    }
+    #card_all{
+      width: 100%;
+      margin-top: 1000px;
+    }
+    .story{
+      width: 80%;
+      top: 870px;
+      font-size: 10px;
+      letter-spacing: -0.25px;
+    }
+
+  }
+  
+
+
+
+
+</style>
+<body ondragstart="return false" oncontextmenu="return false">
+
+    <!-- 카드뉴스 글씨 -->
+    <section>
+      <h1 class="title_L">CARD</h1>
+      <h1 class="title_R">NEWS</h1>
+      <p class="story">치과에서 일하면서 치과보험에 관한 질문을 많이 듣게 된 경험으로 2020년 치과건강보험을 주제로 카드뉴스를 만들었습니다. 
+        <br> 내용이 잘 전달될 수 있게 글씨 주변으로 어두운색으로 배경을 주고 보험내용이 지루하게 느껴질 수 있어 치아 캐릭터를 넣어 재미를 더했습니다.
+      </p>
+    </section>
+
+
+      <!-- 스마트폰 목업 -->
+      <section id="bg">
+      <img src="p_img/목업3.png">
+      </section>
+      <!-- 스마트폰 슬라이드 -->
+      <div class="w_size">
+        <section id="over_hidden">
+          <div class="center slider">
+              <div>
+                  <img src="p_img/tooth_01.jpg">
+              </div>
+              <div>
+                  <img src="p_img/tooth_02.jpg">
+              </div>
+              <div>
+                  <img src="p_img/tooth_03.jpg">
+              </div>
+              <div>
+                  <img src="p_img/tooth_04.jpg">
+              </div>
+              <div>
+                  <img src="p_img/tooth_05.jpg">
+              </div>
+              <div>
+                  <img src="p_img/tooth_0.jpg">
+              </div>
+            </div>
+          </section>
+        </div>
+      <!-- 카드전체 -->
+      <section id="card_all">
+        <img src="p_img/카드뉴스_완성2.jpg">
+      </section>
+      <nav>
+        <a href="info.html"><li><b>〈</b></span> 인포그래픽 <span>|</span></li></a>
+        <a href="de-main.html"><li> 메인화면 <span>|</span></li></a>
+        <a href="deteil.html"><li> 상세페이지 <b>〉</b></li></a>
+      </nav>
+</body>
+<script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+<script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>
+<script>
+
+//슬라이드
+$('.center').slick({
+  // autoplay: true,
+  dots: true,
+  arrows: false,
+  centerMode: true,
+  centerPadding: '0',
+  slidesToShow: 1,
+});
+
+// 카드뉴스 움직임
+$('.title_L').css({
+  "left":"10%",
+  "transition": "all 2s"
+});
+
+$('.title_R').css({
+  "right":"8%",
+  "transition": "all 2s"
+});
+
+
+
+</script>
+</html>
