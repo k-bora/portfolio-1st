@@ -440,7 +440,7 @@
         transition: all 0.5s;
     }
     .contact:hover h2{
-        color:violet;
+        color: rgb(46, 166, 214);
         transform: scale(0.95);
         transition: all 0.5s;
     }
